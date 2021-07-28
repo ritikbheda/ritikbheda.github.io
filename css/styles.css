@@ -536,7 +536,7 @@ progress {
 .list-inline {
   padding-left: 0;
   list-style: none;
-  display: inline-flex;
+  /* display: inline-flex; */
 }
 
 .list-inline-item {
