@@ -539,6 +539,15 @@ progress {
   /* display: inline-flex; */
 }
 
+@media (min-width: 600px) {
+ 
+.list-inline {
+  padding-left: 0;
+  list-style: none;
+  display: inline-flex;
+} 
+}
+
 .list-inline-item {
   display: inline-block;
   filter: grayscale(20%);
@@ -546,7 +555,8 @@ progress {
 .list-inline-item-name{
   color: white;
   display: list-item;
-  font-size: 15px;
+  padding:0 5px;
+  font-size: 18px;
   text-align: center;
 }
 .list-inline-item:hover {
@@ -560,7 +570,7 @@ progress {
   padding:0 5px;
   display: list-item;
   text-align: center;
-  font-size: 20px;
+  font-size: 18px;
 }
 .list-inline-item:not(:last-child) {
   margin-right: 0.5rem;
