@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Racing+Sans+One&family=Londrina+Shadow&family=Chakra+Petch&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.main-grid {
+  display: grid;
+  background-color: #303030;
+  /* height: 100vh; */
+  gap: 4px;
+  /* grid-template-columns: 16.3vw 16.3vw 16.3vw 16.3vw 16.3vw 16.3vw; */
+  grid-template-rows: 28vh 28vh 28vh 28vh 28vh 20vh 20vh 28vh 28vh 20vh;
+  font-family: 'Racing Sans One';
+}
+
+.grid-item {
+  background-color: #222222;
+  /* font-size: 30px; */
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#name {
+  grid-column: 1;
+  font-family: 'Racing Sans One';
+  /* font-size: 20px; */
+}
+
+#name > div > h1 {
+  padding: 0;
+  margin: 0;
+  font-size: 200px;
+}
+
+#name > div > span {
+  font-size: 50px;
+  padding: 0;
+  color: #0096c7;
+  margin: 0;
+}
+
+#tableTennis {
+  font-family: 'Racing Sans One';
+  font-size: 50px;
+}
+
+.table-p {
+  width: 100%;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.table-p > span {
+  font-size: 25px;
+  margin-bottom: -10px;
+  display: block;
+}
+
+#music {
+  grid-column: 1/3;
+  /* padding: 70px; */
+}
+
+#music > div > span {
+  font-size: 25px;
+}
+
+#softwareDeveloper {
+  grid-column: 1/3;
+}
+
+.rotatingText {
+  overflow: hidden;
+  height: 90px;
+}
+
+.rotatingWords {
+  display: block;
+  height: 100%;
+  font-size: 75px;
+  animation: spin_words 6s infinite;
+}
+
+@keyframes spin_words {
+  10% {
+    transform: translateY(-112%);
+  }
+  25% {
+    transform: translateY(-100%);
+  }
+  35% {
+    transform: translateY(-212%);
+  }
+  50% {
+    transform: translateY(-200%);
+  }
+  60% {
+    transform: translateY(-312%);
+  }
+  75% {
+    transform: translateY(-300%);
+  }
+  85% {
+    transform: translateY(-412%);
+  }
+  100% {
+    transform: translateY(-400%);
+  }
+}
+
+#about {
+  grid-row: 3/5;
+  grid-column: 1/3;
+  padding: 50px;
+}
+
+.about-para {
+  font-size: 47px;
+  font-family: 'Chakra Petch';
+}
+
+#github {
+  transition: background-color 300ms ease;
+}
+
+#github:hover {
+  background-color: white;
+}
+
+#github:hover .hover-icon {
+  display: inline;
+  z-index: 99;
+}
+
+#github:hover .original-icon {
+  display: none;
+}
+
+#twitter {
+  transition: background-color 300ms ease;
+}
+
+#twitter:hover {
+  background-color: white;
+}
+
+#twitter:hover .hover-icon {
+  display: inline;
+
+  z-index: 99;
+}
+
+#twitter:hover .original-icon {
+  display: none;
+
+  z-index: 99;
+}
+
+#quote {
+  grid-column: 5/7;
+}
+
+.the-qoute {
+  font-family: 'Dancing Script';
+
+  text-align: center;
+}
+
+.qoute-by {
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+#linkedIn {
+  transition: background-color 300ms ease;
+}
+
+#linkedIn:hover {
+  background-color: white;
+}
+
+#linkedIn:hover .hover-icon {
+  display: inline;
+  z-index: 99;
+}
+
+#linkedIn:hover .original-icon {
+  display: none;
+}
+
+.original-icon {
+}
+
+.hover-icon {
+  display: none;
+}
+
+#photography {
+  grid-column: 1/3;
+  grid-row: 8/10;
+  font-family: 'Londrina Shadow';
+}
+
+.photography-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+#photo-gallery {
+  width: 100%;
+  height: 100%;
+
+  position: absolute;
+  background-image: url('../assets/photos/1.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#photo-gallery > p {
+  width: 100%;
+  height: 100%;
+}
+.photo-title {
+  max-width: fit-content;
+  position: relative;
+  top: 180px;
+  left: 100px;
+}
+
+#calendly {
+}
+
+#calendly {
+  transition: background-color 300ms ease;
+}
+
+#calendly:hover {
+  background-color: white;
+}
+
+#calendly:hover .hover-icon {
+  display: inline;
+  z-index: 99;
+}
+
+#calendly:hover .original-icon {
+  display: none;
+}
+
+#email {
+  grid-column: 1/3;
+  font-size: 68px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+#instagram {
+  transition: background-color 300ms ease;
+}
+
+#instagram:hover {
+  background-color: white;
+}
+
+#instagram:hover .hover-icon {
+  display: block;
+  z-index: 99;
+}
+
+#instagram:hover .original-icon {
+  display: none;
+}
+
+.connect-icons {
+  width: 160px;
+}
+.connect-icons1 {
+  width: 200px;
+}
+
+.connect-icons2 {
+  width: 180px;
+}
+
+.connect-icons3 {
+  width: 180px;
+}
+
+.connect-icons4 {
+  width: 180px;
+}
+
+.p5 {
+  padding: 5px;
+}

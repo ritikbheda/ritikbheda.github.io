@@ -1,0 +1,6 @@
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("../photos/1.jpg");
+}

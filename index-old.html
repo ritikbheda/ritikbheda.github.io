@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+</head>
+<body>
+    <div class="nav-bar-container">
+        <div class="logo">
+            <h1>Ritik Bheda</h1>
+        </div>
+        <div class="nav-bar">
+            <ul>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="slider-container">
+
+        
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="./photos/1.jpg" alt="phot" class="photo "></div>
+                <div class="swiper-slide"><img src="./photos/2.jpg" alt="phot" class="photo "></div>
+                <div class="swiper-slide"><img src="./photos/3.jpg" alt="phot" class="photo "></div>
+                
+
+            </div>
+
+            <div class="swiper-pagination"></div>
+        
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        
+            
+        </div>
+
+    </div>
+
+
+    <div class="gallery">
+        <div class="grid">
+            <img src="./photos/1.jpg" alt="phot" class="photo">
+            <img src="./photos/McD.jpeg" alt="phot" class="photo">
+            <img src="./photos/2.jpg" alt="phot" class="photo">
+            <img src="./photos/3.jpg" alt="phot" class="photo">
+            <img src="./photos/McD2.jpeg" alt="phot" class="photo">
+            <img src="./photos/4.jpg" alt="phot" class="photo">
+            <img src="./photos/5.jpg" alt="phot" class="photo">
+            <img src="./photos/1.jpg" alt="phot" class="photo">
+
+            <img src="./photos/1.jpg" alt="phot" class="photo">
+            <img src="./photos/2.jpg" alt="phot" class="photo">
+            <img src="./photos/3.jpg" alt="phot" class="photo">
+            <img src="./photos/McD.jpeg" alt="phot" class="photo">
+            <img src="./photos/4.jpg" alt="phot" class="photo">
+            <img src="./photos/McD2.jpeg" alt="phot" class="photo">
+            <img src="./photos/5.jpg" alt="phot" class="photo">
+            <img src="./photos/1.jpg" alt="phot" class="photo">
+    </div>
+    </div>
+
+
+
+    <!-- <div class="container">
+
+        
+        
+        <div class="photo-style-container">
+            <ul>
+                <li>All</li>
+                <li>Black/White</li>
+                <li>Nature</li>
+                <li>Architecture</li>
+                <li>Travel</li>
+                <li>Street</li>
+            </ul>
+
+        </div>
+
+
+        <div class="box">
+            <div class="photo-column">
+                <img src="./photos/1.jpg" alt="phot" class="photo">
+                <img src="./photos/McD.jpeg" alt="phot" class="photo">
+                <img src="./photos/2.jpg" alt="phot" class="photo">
+                <img src="./photos/3.jpg" alt="phot" class="photo">
+                <img src="./photos/McD2.jpeg" alt="phot" class="photo">
+                <img src="./photos/4.jpg" alt="phot" class="photo">
+                <img src="./photos/5.jpg" alt="phot" class="photo">
+                <img src="./photos/1.jpg" alt="phot" class="photo">
+            </div>
+
+            
+
+            <div class="photo-column">
+                <img src="./photos/1.jpg" alt="phot" class="photo">
+                <img src="./photos/2.jpg" alt="phot" class="photo">
+                <img src="./photos/3.jpg" alt="phot" class="photo">
+                <img src="./photos/McD.jpeg" alt="phot" class="photo">
+                <img src="./photos/4.jpg" alt="phot" class="photo">
+                <img src="./photos/McD2.jpeg" alt="phot" class="photo">
+                <img src="./photos/5.jpg" alt="phot" class="photo">
+                <img src="./photos/1.jpg" alt="phot" class="photo">
+                 
+            </div>
+
+
+
+            <div class="photo-column">
+
+                <img src="./photos/McD.jpeg" alt="phot" class="photo">
+                <img src="./photos/1.jpg" alt="phot" class="photo">
+                <img src="./photos/McD2.jpeg" alt="phot" class="photo">
+                <img src="./photos/2.jpg" alt="phot" class="photo">
+                <img src="./photos/3.jpg" alt="phot" class="photo">
+                 
+            </div>
+
+        </div>
+
+    </div> -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+
+
+const swiper = new Swiper('.swiper', {
+  
+    autoplay:{
+        delay: 3000,
+        disableOnInteraction: false
+    },
+  loop: true,
+
+  
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+
+  
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  }
+});
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="randomImage.css">
+
+</head>
+<body>
+    <section>
+        <h2>random</h2>
+    </section>
+
+    <script> 
+
+        var section = document.querySelector('section')
+        section.style.opacity = 0.1;
+        var images = [
+            "url('../photos/1.jpg')",
+            "url('../photos/2.jpg')",
+            "url('../photos/3.jpg')",
+            "url('../photos/4.jpg')",
+            "url('../photos/5.jpg')"
+        ]
+
+
+        setInterval(function() {
+            var bg = images[Math.floor(Math.random() * images.length)]
+            section.style.background = bg;
+        }, 10000)
+    </script>
+
+</body> 
+</html>

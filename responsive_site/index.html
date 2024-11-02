@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="assets/profilePhoto/Ritik Bheda.jpeg"
+    />
+    <title>Ritik Bheda</title>
+  </head>
+  <body>
+    <div class="main-grid">
+      <div id="name" class="grid-item">
+        <div>
+          <h1>R B</h1>
+          <span>Ritik Bheda</span>
+        </div>
+      </div>
+
+      <div id="tableTennis" class="grid-item">
+        <p class="table-p"><span>I love playing</span>Table Tennis</p>
+      </div>
+
+      <div id="softwareDeveloper" class="grid-item">
+        <div class="rotatingText">
+          <span class="rotatingWords">Software Developer</span>
+          <span class="rotatingWords">Hobbyist Photographer</span>
+          <span class="rotatingWords">Table Tennis Player</span>
+          <span class="rotatingWords">Future FPV Pilot</span>
+          <span class="rotatingWords">Software Developer</span>
+        </div>
+      </div>
+
+      <div id="about" class="grid-item">
+        <span class="about-para"
+          >Generating random paragraphs can be an excellent way for writers to
+          get their creative flow going at the beginning of the day. The writer
+          has no idea what topic the random paragraph will be about when it
+          appears. This forces the writer to use creativity to complete one of
+          three common writing challenges. The writer can use the paragraph as
+          the first one of a short story and build upon it. A second option is
+          to use the random paragraph somewhere in a short story they create.
+        </span>
+      </div>
+
+      <div id="music" class="grid-item">
+        <div>
+          <span>I am probably listensing to</span>
+          <iframe
+            id="track"
+            style="border-radius: 12px"
+            src=""
+            width="100%"
+            height="350"
+            frameborder="0"
+            allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy"
+          ></iframe>
+          <!-- <iframe
+            id="track"
+            style="border-radius: 12px"
+            src=""
+            width="100%"
+            height="172px"
+            frameborder="0"
+            allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy"
+          ></iframe> -->
+        </div>
+      </div>
+
+      <div id="github" class="grid-item">
+        <a href="https://github.com/ritikbheda" target="_blank">
+          <img src="assets/github.svg" class="connect-icons original-icon" />
+          <img
+            src="assets/github-hover.svg"
+            class="connect-icons1 hover-icon"
+          />
+        </a>
+      </div>
+
+      <div id="twitter" class="grid-item">
+        <a href="https://twitter.com/RitikBheda" target="_blank">
+          <img src="assets/twitter.svg" class="connect-icons original-icon" />
+          <img
+            src="assets/twitter-hover.svg"
+            class="connect-icons2 hover-icon"
+          />
+        </a>
+      </div>
+
+      <!-- <div id="quote" class="grid-item">
+        <span class="the-qoute"
+          >"The way to get started is to quit talking and begin doing."
+          <br /><span class="qoute-by">-Walt Disney</span></span
+        >
+      </div> -->
+
+      <div id="linkedIn" class="grid-item">
+        <a href="https://www.linkedin.com/in/ritikbheda/" target="_blank">
+          <img src="assets/linkedin.svg" class="connect-icons original-icon" />
+          <img
+            src="assets/linkedin-hover.svg"
+            class="connect-icons1 hover-icon"
+          />
+        </a>
+      </div>
+      <div id="instagram" class="grid-item">
+        <a href="https://www.linkedin.com/in/ritikbheda/" target="_blank">
+          <img src="assets/instagram.svg" class="connect-icons original-icon" />
+          <img
+            src="assets/instagram-hover.svg"
+            class="connect-icons2 hover-icon"
+          />
+        </a>
+      </div>
+
+      <div id="photography" class="grid-item">
+        <div class="photography-container">
+          <a href="https://photography.ritikbheda.com/">
+            <div id="photo-gallery">
+              <p></p>
+            </div>
+
+            <p class="photo-title">photography.ritikbheda.com</p>
+          </a>
+        </div>
+      </div>
+
+      <!-- <div id="resume" class="grid-item">
+        <-- <a href="C:\Users\ritik\Desktop\OSD600\photography\assets\Ritik Bheda-Resume.pdf"> --
+        <a href="./assets/Ritik Bheda-Resume.pdf">
+          <span>resume</span>
+        </a>
+      </div> -->
+
+      <!-- <div id="calendly" class="grid-item">
+        <a href="https://calendly.com/ritikbheda" target="_blank">
+          <img src="assets/calendly.png" class="connect-icons3 original-icon" />
+          <img
+            src="assets/calendly-hover.png"
+            class="connect-icons4 hover-icon"
+          />
+        </a>
+      </div> -->
+
+      <div id="email" class="grid-item">
+        <a href="mailto:ritik.bheda@gmail.com">ritik.bheda@gmail.com</a>
+      </div>
+    </div>
+
+    <script>
+      var trackElement = document.getElementById('track');
+
+      var track = [
+        'https://open.spotify.com/embed/track/55CrqwOpgvzYCos5XZ7aj2?utm_source=generator&theme=0',
+        'https://open.spotify.com/embed/track/4Dvkj6JhhA12EX05fT7y2e?utm_source=generator&theme=0',
+        'https://open.spotify.com/embed/track/0HYAsQwJIO6FLqpyTeD3l6?utm_source=generator&theme=0',
+        'https://open.spotify.com/embed/track/3F5CgOj3wFlRv51JsHbxhe?utm_source=generator&theme=0',
+      ];
+
+      trackElement.src = track[Math.floor(Math.random() * track.length)];
+
+      var section = document.getElementById('photo-gallery');
+      section.style.opacity = 0.1;
+      var images = [
+        "url('./assets/photos/1.png')",
+        "url('./assets/photos/2.png')",
+        "url('./assets/photos/3.png')",
+        "url('./assets/photos/4.png')",
+        "url('./assets/photos/5.png')",
+        "url('./assets/photos/6.png')",
+        "url('./assets/photos/7.png')",
+        "url('./assets/photos/8.png')",
+        "url('./assets/photos/9.png')",
+        "url('./assets/photos/10.png')",
+      ];
+
+      setInterval(function () {
+        var bg = images[Math.floor(Math.random() * images.length)];
+        section.style.backgroundImage = bg;
+        section.style.opacity = Math.random(0.9) + 0.1;
+      }, 900);
+    </script>
+  </body>
+</html>
